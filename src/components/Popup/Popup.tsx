@@ -8,7 +8,7 @@ interface PopupProps {
   visibile: boolean;
 }
 
-const Home: React.FC<PopupProps> = ({ message, visibile }: PopupProps) => {
+const Popup: React.FC<PopupProps> = ({ message, visibile }: PopupProps) => {
   const CSS = PopupStyles.factory();
   const dispatch = useDispatch();
 
@@ -35,4 +35,4 @@ const Home: React.FC<PopupProps> = ({ message, visibile }: PopupProps) => {
   );
 };
 
-export default Home;
+export default Popup;

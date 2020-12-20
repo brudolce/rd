@@ -15,6 +15,7 @@ const Home: React.FC = () => {
   const store = useSelector((reduxState: ApplicationState) => reduxState);
   const theme = store.theme.Theme;
 
+
   const CSS = AppStyles.factory(theme);
 
   const data = [
@@ -68,6 +69,8 @@ const Home: React.FC = () => {
         ...CSS.container(),
       }}
     >
+      
+
       <div style={{ ...CSS.container("row", "space-around"), width: "100%" }}>
         {data.map((el, i) => (
           <div key={i} style={{ margin: "20px", maxWidth: "1200px" }}>

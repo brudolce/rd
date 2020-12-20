@@ -6,9 +6,10 @@ export default class PopupStyles extends AppStyles {
     return {
       visibility: visibile?'visible':'hidden',
       position: "absolute",
+      top:'40px',
       zIndex: 2,
-      width: "100vw",
-      height: "100vh",
+      height:"100%",
+      width: "100%",
       ...this.container(),
     };
   }
@@ -37,13 +38,14 @@ export default class PopupStyles extends AppStyles {
 
   public Fading(visibile:boolean = false): Object {
     return {
-      visibility: visibile?'visible':'hidden',
-      position: "absolute",
-      zIndex: 1,
-      width: "100vw",
-      height: "100vh",
-      backgroundColor: "rgba(220, 220, 220)",
-      opacity: 0.7,
+      // visibility: visibile?'visible':'hidden',
+      // position: "absolute",
+      // zIndex: 1,
+      // top:'0px',
+      // width: "100%",
+      // height: "100%",
+      // backgroundColor: "rgba(220, 220, 220)",
+      // opacity: 0.7,
     };
   }
   static factory(): PopupStyles {
