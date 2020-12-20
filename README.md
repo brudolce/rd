@@ -4,4 +4,4 @@
 
 bom dia pessoas.
 
-Não usei styled components, mas usei uma arquitetura de estilização de uma biblioteca de UI de Java, o JavaFX. O css é armazenado em classes e injetado nos componentes, intanciado uma única vez por componente (singleton). Dessa forma evita-se a repetição e permite-se a criação de testes unitários para o css se necesário. Lógica de dependency injection e losely coupling para estilisação web.
+Não usei styled components, mas uma arquitetura típica de Java, implementada em bibliotecas de UI como o JavaFX. O css é armazenado em classes e injetado nos componentes, intanciado uma única vez por componente (singleton). Dessa forma evita-se a repetição e permite-se a criação de testes unitários para o css se necesário. Lógica de dependency injection e losely coupling para estilisação web.
