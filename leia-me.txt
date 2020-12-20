@@ -1,0 +1,12 @@
+Primeiramente boa sorte em seu teste!!!
+
+É obrigatório que o site seja desenvolvido em React e desejavel que utilize o styled-component para folha de estilo.
+
+Client-side ou Server-side você escolhe o que preferir.
+
+Os eventos dos botões Leia mais… são obrigatórios.
+
+Observações:
+- tamanho do container: 1200px;
+- imagens enviadas estão no tamanho correto
+- links do menu e do rodapé não precisam ter ação

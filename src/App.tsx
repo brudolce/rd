@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Route, Switch, BrowserRouter } from "react-router-dom";
+import AppStyles from "./App.styles";
+import Home from "./views/Home/Home";
+import NavBar from "./components/NavBar/NavBar";
+import Footer from "./components/Footer/Footer";
+import { useSelector } from "react-redux";
+import { ApplicationState } from "./store";
+import Popup from "./components/Popup/Popup";
 
-function App() {
+const App: React.FC = () => {
+  const store = useSelector((reduxState: ApplicationState) => reduxState);
+  const theme = store.theme.Theme;
+  const pop = store.popup.Popup;
+
+  const CSS = AppStyles.factory(theme);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Popup message={pop.message} visibile={pop.visibile} />
+      <div style={{ padding: "0 5%", backgroundColor: CSS.grey }}>
+        <NavBar theme={theme} />
+        <BrowserRouter>
+          <Switch>
+            <Route exact path="/" component={Home} />
+          </Switch>
+        </BrowserRouter>
+        <Footer theme={theme} />
+      </div>
+    </>
   );
-}
+};
 
 export default App;
