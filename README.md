@@ -1,6 +1,8 @@
 ![](https://img.shields.io/badge/TS-ES5-blue) ![](https://img.shields.io/badge/React-^17.0.1-blue) ![](https://img.shields.io/badge/REDUX-v7.2.1-purple)
 
 ---
+https://jolly-fermat-ff8f8b.netlify.app
+---
 
 bom dia pessoas.
 
